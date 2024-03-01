@@ -4,4 +4,38 @@ body {
   overflow-x: hidden;
     background-color: rgb(45, 46, 45);
 }
+.contenido {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
 
+.capa1 {
+  background-color: rgb(39, 201, 201);
+  height: 20rem;
+  width: 20rem;
+  right: 0;
+
+}
+
+.capa2 {
+  background-color: blue;
+  height: 20rem;
+  width: 20rem;
+}
+.capa3 {
+  background-color: blue;
+  height: 20rem;
+  width: 20rem;
+}
+.capa4 {
+  background-color: blue;
+  height: 20rem;
+  width: 20rem;
+}
+.capa5 {
+  background-color: blue;
+  height: 20rem;
+  width: 20rem;
+}
