@@ -1,0 +1,22 @@
+.navBar {
+    width: 100%;
+    background-color: aqua;
+    height: 100px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 150px;
+    height: 100px;
+    padding-left: 10px;
+    
+}
+.menu {
+    font-size: 2rem;
+    text-align: center;
+    padding-right: 10px;
+}
