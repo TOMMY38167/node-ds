@@ -1,0 +1,21 @@
+
+.contenedor1 {
+   display: flex;
+    
+   justify-content: center; 
+   margin-bottom: 30rem;
+}
+.contenedor2 {
+    display: flex;
+    
+    justify-content: center;
+    width: 20rem;
+    height: 20rem; 
+    flex-direction: column;
+ }
+.imgFondo {
+    width: 7rem;
+    height: 2rem;
+    
+
+}

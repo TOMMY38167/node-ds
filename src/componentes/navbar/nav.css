@@ -1,6 +1,6 @@
 .navBar {
     width: 100%;
-    background-color: aqua;
+    background-color: rgba(15, 15, 15, 0.425);
     height: 100px;
     overflow: hidden;
     padding-bottom: 10px;
@@ -8,15 +8,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(0.2rem);
+    z-index: 1;
 }
 .logo {
     width: 150px;
     height: 100px;
     padding-left: 10px;
+    padding-top: 10px;
+   
     
 }
 .menu {
     font-size: 2rem;
     text-align: center;
-    padding-right: 10px;
+    padding-right: 2%;
 }
