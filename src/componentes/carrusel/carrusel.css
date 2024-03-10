@@ -50,13 +50,12 @@
  
   
   .space {
-    height: 20vh;
+    height: 2rem;
+  
     
   }
   
-  .space--small {
-    height: 40vh;
-  }
+  
   
   @media (max-width: 600px) {
     .card__inner {

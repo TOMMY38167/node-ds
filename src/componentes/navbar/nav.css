@@ -1,73 +1,76 @@
 .navBar {
-    width: 100%;
-    background-color: rgba(15, 15, 15, 0.425);
-    height: 4.2rem;
-    overflow: hidden;
-    
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   z-index: 1;
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(0.2rem);
-    
-    
-    
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.425);
+  height: 4.2rem;
+  overflow: hidden;
+  flex-direction: WRAP;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(0.2rem);
+}
+.menu-hambur {
+  width: 7em;
+  display: flex;
+
+  align-items: center;
+}
+.menu-hambur {
+  font-family: "Open Sans", sans-serif;
+  color: aliceblue;
 }
 
-       
-
 .logo {
- width: auto;
- height: 3.1rem;
+  width: auto;
+  height: 3.1rem;
   padding-bottom: 1%;
   padding-left: 1%;
   padding-top: 0.5%;
 }
-a {
-    width: 36px;
-    height: auto;
-    padding-right: 1%;
-    
-}
 
 .menu {
-    width: auto;
-    height: 0.7rem;
+  width: auto;
+  height: 0.7rem;
 }
-.menu-items  {
-    
-    display: flex;
-  
-    justify-content: center;
-    align-items: center;
-    
-    top: 0;
-    left: 0;
-    width: 100vw;
-    
-    height: 100vh;
-   
-    
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-}
+.menu-items {
+  display: flex;
 
+  justify-content: center;
+  align-items: center;
+ margin-top: -5em;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  animation: fadeIn 2s ease-out forwards;
+}
 
 ul {
-    
-    margin-top: 11vh;
-    width: 150vh;
-    height: 85vh;
+  margin-top: 11vh;
+  width: 150vh;
+  height: 85vh;
 }
 li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6rem;
-    color: #ffffff8f;
-   
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  color: #ffffff8f;
+  font-family: "TuskerGrotesk";
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
+@font-face {
+  font-family: "Encode Sans Condensed";
+  src: url(https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap);
+}
