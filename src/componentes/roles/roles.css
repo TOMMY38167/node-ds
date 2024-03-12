@@ -1,0 +1,32 @@
+.textInputContainer {
+  
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.textInputContainer p {
+  color: antiquewhite;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 100;
+  margin: 0%;
+  background-color: rgba(245, 222, 179, 0.315);
+}
+.textInputContainer h5 {
+   background-color: aqua;
+   position: center;
+    font-family: "TuskerGrotesk";
+  font-weight: 100;
+  font-size: 9rem;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+@font-face {
+  font-family: "TuskerGrotesk";
+  src: url(../../../src/fonts/TuskerGrotesk-2500Medium.ttf);
+}
+
+@font-face {
+  font-family: "Encode Sans Condensed";
+  src: url(https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap);
+}

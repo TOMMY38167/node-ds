@@ -4,12 +4,13 @@ import React from "react";
 import Nav from "../../componentes/navbar/nav";
 import Fondo from "../../svg/fondologonegro.svg";
 import Abajo from "../../svg/down.svg";
+import Roles from "../../componentes/roles/roles";
 
 export function SobreNosotros() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <Nav  setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+      <Nav setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
       <div className="sobre-nosotros">
         <div className="nosotros-text">
           <h1>SOBRE NOSOTROS</h1>
@@ -68,9 +69,45 @@ export function SobreNosotros() {
           </p>
         </div>
       </div>
-      <div>
-        
+      <div className="equipo-contenedor">
+        <div className="equipo-text">
+          <h1>NUESTRO EQUIPO</h1>
+          <h2>
+            NUESTRO EQUIPO DE PROFESIONALES <br />
+            QUE ACOMPAÑARÁN TUS PROYECTOS
+          </h2>
+        </div>
       </div>
+      <Roles
+        textoIzquieda={"Since 2023"}
+        textoCentro={"TOMAS ROBLEDO"}
+        textoDerecha={"Developer"}
+      />
+      <hr />
+      <Roles
+        textoIzquieda={"Since 2023"}
+        textoCentro={"BRIAN ARCE"}
+        textoDerecha={"Developer"}
+      />
+      <hr />
+      <Roles
+        textoIzquieda={"Since 2023"}
+        textoCentro={"GABRIEL SOSA"}
+        textoDerecha={"Developer / Cofounder"}
+      />
+      <hr />
+      <Roles
+        textoIzquieda={"Since 2024"}
+        textoCentro={"AGUSTINA OJEDA"}
+        textoDerecha={"Brand Strategy"}
+      />
+      <hr />
+      <Roles
+        textoIzquieda={"Since 2023"}
+        textoCentro={"MATIAS ROSAS"}
+        textoDerecha={"Art Director / Founder"}
+      />
+      <hr />
     </>
   );
 }
