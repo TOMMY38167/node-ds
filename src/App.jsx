@@ -9,16 +9,26 @@ import Gmail from "./svg/gmail.svg";
 import Direccion from "./svg/ubicacion.svg";
 import Telefonos from "./svg/tel.svg";
 import Abajo from "./svg/down.svg";
-import {Routes, Route} from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [hoveredLetters, setHoveredLetters] = useState([]);
+
+  const handleMouseEnter = (index) => {
+    setHoveredLetters([...hoveredLetters, index]);
+  };
+
+  const handleMouseLeave = (index) => {
+    setHoveredLetters(hoveredLetters.filter((i) => i !== index));
+  };
+  const text = "TRABAJA CON NOSOTROS";
 
   return (
     <div className="main">
       <Nav setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
       <Routes>
-        <Route path="/sobrenosotros" element={<SobreNosotros/>} />
+        <Route path="/sobrenosotros" element={<SobreNosotros />} />
         <Route path="/" />
       </Routes>
       {!isMenuOpen && (
@@ -60,21 +70,16 @@ function App() {
 
             <div className="space--button"></div>
             <div className="servicios">
-              <h1>  ESTRATEGIA DE MARCA </h1>
+              <h1> ESTRATEGIA DE MARCA </h1>
               <h1> PROGRAMACIÓN </h1>
               <h1>DISEÑO UX/UI</h1>
               <h1>ESTRATEGIA DE MARCA</h1>
-              
-                
-                
-                 
-              
             </div>
             <div className="space--button"></div>
             <div className="conoce">
               <p>CONOCE EL TEAM CODE</p>
               <a href="">
-              <h1>NUESTRO EQUIPO</h1>
+                <h1>NUESTRO EQUIPO</h1>
               </a>
             </div>
             <div className="space--button"></div>
@@ -101,8 +106,22 @@ function App() {
             </a>
           </div>
           <div className="space"></div>
-          <div className="text-button">
-            <h1>TRABAJEMOS JUNTOS</h1>
+          <div className="title-contenedor">
+            <h1 className="title">
+              {" "}
+              {text.split("").map((letter, index) => (
+                <span
+                  key={index}
+                  className={
+                    hoveredLetters.includes(index) ? "letter hovered" : "letter"
+                  }
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={() => handleMouseLeave(index)}
+                >
+                  {letter}
+                </span>
+              ))}
+            </h1>
           </div>
 
           <Footer />

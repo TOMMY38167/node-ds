@@ -1,7 +1,11 @@
 .textInputContainer {
-  
-  display: flex;
-  justify-content: space-evenly;
+  background-color: rgba(0, 0, 117, 0.767);
+ display: flex;
+  height: 10em;
+  justify-content: space-around;
+ width: 100%;
+ align-items: center;
+ position: relative;
   
 }
 .textInputContainer p {
@@ -10,15 +14,21 @@
   font-weight: 100;
   margin: 0%;
   background-color: rgba(245, 222, 179, 0.315);
+
+
 }
 .textInputContainer h5 {
    background-color: aqua;
-   position: center;
+   display: flex;
+text-align: center;
+align-items: center;
     font-family: "TuskerGrotesk";
   font-weight: 100;
   font-size: 9rem;
   color: rgb(255, 255, 255);
   margin: 0;
+  padding: 0;
+  top: 0%;
 }
 
 @font-face {

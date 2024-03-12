@@ -133,6 +133,8 @@ body {
 .trabajemos h1 {
   font-size: 12rem;
   font-family: "TuskerGrotesk";
+  display: inline-block;
+  
 }
 
 a {
@@ -145,6 +147,37 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+.title-contenedor {
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+ 
+}
+span {
+
+  width: max-content;
+  margin: 0.7rem;
+  padding: 0;
+  height: max-content;
+}
+.title {
+  font-size: 11rem;
+  font-family: "TuskerGrotesk";
+  font-weight: 100;
+  color: #ffffff;
+
+}
+
+.letter {
+  transition: transform 0.1s ease; 
+  display: inline-block; 
+}
+
+.letter.hovered {
+  transform: scale(1.5); 
+}
+
 
 @font-face {
   font-family: "TuskerGrotesk";
