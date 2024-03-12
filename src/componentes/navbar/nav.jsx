@@ -10,10 +10,9 @@ export const Nav = ({ setIsMenuOpen, isMenuOpen }) => {
   return (
     <>
       <div className="navBar">
-        <img className="logo" src={Logo} alt="" />
+        <a href="/"><img className="logo" src={Logo} alt="" /></a>
         <div className="menu-hambur">
-          <p>Menu</p>
-          {" "}
+          <p>Menu</p>{" "}
           <a onClick={toggleMenu} href="#">
             {" "}
             <Hamburger
@@ -26,11 +25,37 @@ export const Nav = ({ setIsMenuOpen, isMenuOpen }) => {
       </div>
       {isMenuOpen && (
         <div className="menu-items">
-          <ul>
-           <a href=""><li>SOBRE NOSOTROS</li></a> 
-           <a href=""><li>SERVICIOS</li></a> 
-           <a href=""><li>PLANES</li></a> 
-           <a href=""><li>CONTACTOS</li></a> 
+          <ul className="contenedor-ul">
+            <a href="/sobrenosotros">
+              <div className="nuestro">
+                <li className="text-top">SOBRE NOSOTROS</li>
+                <li className="text-bottom">SOBRE NOSOTROS</li>
+              </div>
+            </a>
+            <a href="">
+              <div className="nuestro">
+                <li className="text-top">SERVICIOS</li>
+                <li className="text-bottom">SERVICIOS</li>
+              </div>
+            </a>
+            <a href="">
+              <div className="nuestro">
+                <li className="text-top">PLANES</li>
+                <li className="text-bottom">PLANES</li>
+              </div>
+            </a>
+            <a href="">
+              <div className="nuestro">
+                <li className="text-top">CONTACTOS</li>
+                <li className="text-bottom">CONTACTOS</li>
+              </div>
+            </a>
+            <a href="">
+              <div className="nuestro">
+                <li className="text-top">TRABAJOS</li>
+                <li className="text-bottom">TRABAJOS</li>
+              </div>
+            </a>
           </ul>
         </div>
       )}

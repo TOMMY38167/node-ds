@@ -48,14 +48,18 @@ body {
   padding: 10px 20px;
   border-radius: 40px;
   border: 2px solid rgb(255, 255, 255);
+  transition: background-color 0.3s, color 0.3s;
 }
-
+.proyectos--button a:hover {
+  background-color: white;
+  color: black;
+}
 .text-button h1 {
   font-size: 12rem;
   color: #ffffff;
   font-family: "TuskerGrotesk";
   font-weight: 100;
-  
+
   line-height: 1.1;
   margin: 0;
 }
@@ -64,16 +68,21 @@ body {
 }
 .servicios h1 {
   font-size: 11rem;
+  color: #ffffff;
+  opacity: 0.10;
+  transition: opacity 0.5s ease;
+}
+ h1:hover {
+  opacity: 1;
 }
 .conoce {
   height: 15em;
 }
 .conoce p {
   margin-bottom: -2rem;
-}
-.conoce h1 {
-  font-size: 12rem;
-}
+} 
+
+
 .presupuestos {
   height: 15em;
 }
@@ -91,13 +100,10 @@ body {
   align-items: center;
   color: #ffffff;
   margin-bottom: 4em;
-  
+
   margin-left: 3em;
   margin-right: 3em;
 }
-
-
-
 
 .pie-de-pagina p {
   font-size: 1rem;
@@ -106,7 +112,6 @@ body {
 }
 
 .contactos {
-  
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -118,10 +123,8 @@ body {
 
 .contactos a {
   color: rgb(255, 255, 255);
-  line-height: .0625rem;
+  line-height: 0.0625rem;
   height: 6rem;
-  
-  
 }
 .contactos img {
   width: 2rem;
@@ -129,7 +132,7 @@ body {
 }
 .trabajemos h1 {
   font-size: 12rem;
-  font-family: "TuskerGrotesk" ;
+  font-family: "TuskerGrotesk";
 }
 
 a {
