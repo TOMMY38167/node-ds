@@ -1,5 +1,5 @@
 body {
-  width: 100%;
+  width: calc(100vw - (100vw - 100%));
   min-height: 100vh;
   overflow-x: hidden;
   background-color: rgb(24, 24, 24);
@@ -155,27 +155,28 @@ html {
  
 }
 span {
-
+ 
   width: max-content;
-  margin: 0.7rem;
+  margin: 0.1rem;
   padding: 0;
-  height: max-content;
+ 
 }
 .title {
   font-size: 11rem;
   font-family: "TuskerGrotesk";
   font-weight: 100;
   color: #ffffff;
+ 
 
 }
 
 .letter {
-  transition: transform 0.1s ease; 
+  transition: transform 0.4s ease; 
   display: inline-block; 
 }
 
-.letter.hovered {
-  transform: scale(1.5); 
+.letter:hover {
+  transform: scale(1.25) translateY(.8rem) ; 
 }
 
 

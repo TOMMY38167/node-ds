@@ -5,6 +5,10 @@ import Nav from "../../componentes/navbar/nav";
 import Fondo from "../../svg/fondologonegro.svg";
 import Abajo from "../../svg/down.svg";
 import Roles from "../../componentes/roles/roles";
+import Tomas from "../../img/tomas.jpeg";
+import Gs from "../../img/gs.jpg"
+import Mati from "../../img/mati.jpeg"
+import Agus from "../../img/agustina.jpeg"
 
 export function SobreNosotros() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,8 +50,7 @@ export function SobreNosotros() {
             esfuerzan por superar los límites de lo convencional.
           </p>
         </div>
-      </div>
-      <div className="nuestra-pasion">
+        <div className="nuestra-pasion">
         <div className="pasion-text">
           <h1>NUESTRA PASION</h1>
           <p>
@@ -61,6 +64,8 @@ export function SobreNosotros() {
           </p>
         </div>
       </div>
+      </div>
+
       <div className="comprendemos">
         <div className="comprendemos-text">
           <p>
@@ -78,36 +83,40 @@ export function SobreNosotros() {
           </h2>
         </div>
       </div>
-      <Roles
-        textoIzquieda={"Since 2023"}
-        textoCentro={"TOMAS ROBLEDO"}
-        textoDerecha={"Developer"}
-      />
-      <hr />
-      <Roles
-        textoIzquieda={"Since 2023"}
-        textoCentro={"BRIAN ARCE"}
-        textoDerecha={"Developer"}
-      />
-      <hr />
-      <Roles
-        textoIzquieda={"Since 2023"}
-        textoCentro={"GABRIEL SOSA"}
-        textoDerecha={"Developer / Cofounder"}
-      />
-      <hr />
-      <Roles
-        textoIzquieda={"Since 2024"}
-        textoCentro={"AGUSTINA OJEDA"}
-        textoDerecha={"Brand Strategy"}
-      />
-      <hr />
-      <Roles
-        textoIzquieda={"Since 2023"}
-        textoCentro={"MATIAS ROSAS"}
-        textoDerecha={"Art Director / Founder"}
-      />
-      <hr />
+        <Roles
+          textoIzquierda={"Since 2023"}
+          textoCentro={"TOMAS ROBLEDO"}
+          textoDerecha={"Developer"}
+          foto={Tomas}
+        />
+        <hr />
+        <Roles
+          textoIzquierda={"Since 2023"}
+          textoCentro={"BRIAN ARCE"}
+          textoDerecha={"Developer"}
+        />
+        <hr />
+        <Roles
+          textoIzquierda={"Since 2023"}
+          textoCentro={"GABRIEL SOSA"}
+          textoDerecha={"Developer / Cofounder"}
+          foto={Gs}
+        />
+        <hr />
+        <Roles
+          textoIzquierda={"Since 2024"}
+          textoCentro={"AGUSTINA OJEDA"}
+          textoDerecha={"Brand Strategy"}
+          foto={Agus}
+        />
+        <hr />
+        <Roles
+          textoIzquierda={"Since 2023"}
+          textoCentro={"MATIAS ROSAS"}
+          textoDerecha={"Art Director / Founder"}
+          foto={Mati}
+        />
+        <hr />
     </>
   );
 }

@@ -1,36 +1,97 @@
-.textInputContainer {
-  background-color: rgba(0, 0, 117, 0.767);
- display: flex;
-  height: 10em;
-  justify-content: space-around;
- width: 100%;
- align-items: center;
- position: relative;
-  
-}
-.textInputContainer p {
-  color: antiquewhite;
-  font-family: "Encode Sans Condensed", sans-serif;
-  font-weight: 100;
+.contenedor-roles {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: duration 4s ;
+  padding: 0%;
   margin: 0%;
-  background-color: rgba(245, 222, 179, 0.315);
-
-
 }
-.textInputContainer h5 {
-   background-color: aqua;
-   display: flex;
-text-align: center;
-align-items: center;
-    font-family: "TuskerGrotesk";
+.contenedor-roles:hover {
+  background-color: white;
+}
+.textInputContainer {
+  height: auto;
+  width: 90%;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  gap: 1rem;
+}
+
+.texto-medio {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textInputContainer .texto-medio p {
+  font-family: "TuskerGrotesk";
   font-weight: 100;
   font-size: 9rem;
   color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
-  top: 0%;
+  padding-bottom: 1.8rem;
+}
+.textInputContainer .texto-derecha {
+  text-align: end;
+
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+}
+.texto-izquierda {
+  height: 1rem;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+}
+.blanco-negro {
+  color: rgb(255, 255, 255);
+  transition: color 1s ease;
+  z-index: 1;
 }
 
+.contenedor-roles:hover .blanco-negro {
+  color: black;
+}
+.follow {
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  position: absolute;
+  transition: 0.2s;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: fadeIn 0.4s ease-out forwards;
+  overflow: hidden;
+}
+.follow img {
+  width: 100%;
+  height: auto;
+  filter: sepia(3);
+  filter: grayscale(1);
+}
+.contenedor-roles:hover .follow {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @font-face {
   font-family: "TuskerGrotesk";
   src: url(../../../src/fonts/TuskerGrotesk-2500Medium.ttf);

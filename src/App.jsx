@@ -22,7 +22,7 @@ function App() {
   const handleMouseLeave = (index) => {
     setHoveredLetters(hoveredLetters.filter((i) => i !== index));
   };
-  const text = "TRABAJA CON NOSOTROS";
+  const text = "TRABAJA     CON     NOSOTROS";
 
   return (
     <div className="main">
