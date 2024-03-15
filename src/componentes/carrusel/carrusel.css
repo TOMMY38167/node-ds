@@ -1,22 +1,22 @@
 
   .card {
     position: sticky;
-    top: 50px;
+    top: 3.1rem;
     
   }
   
   .card__inner {
     will-change: transform;
     background: white;
-    border-radius: 14px;
+    border-radius: 4px;
     display: flex;
     overflow: hidden;
-    box-shadow: 0 25px 50px -12px hsla(265.3, 20%, 10%, 35%);
+
     transform-origin: center top;
   }
   
   .cards {
-    width: 100%;
+    width: 95%;
    
     margin: 0 auto;
     display: flex;

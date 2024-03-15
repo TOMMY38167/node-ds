@@ -12,7 +12,7 @@ export const Footer = () => {
   return (
     <>
       <div className="footer">
-        <a href="Nav">
+        <a href="/">
           <p className="volver">
             Volver al HOME     <img src={Arriba} alt="" />
           </p>

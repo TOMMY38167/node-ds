@@ -1,6 +1,7 @@
 import "./sobrenosotros.css";
 import { useState } from "react";
 import React from "react";
+import { Footer } from "../../componentes/footer/footer"
 import Nav from "../../componentes/navbar/nav";
 import Fondo from "../../svg/fondologonegro.svg";
 import Abajo from "../../svg/down.svg";
@@ -117,6 +118,10 @@ export function SobreNosotros() {
           foto={Mati}
         />
         <hr />
+        <div className="contacto-final">
+          <h1>CONTACTANOS</h1>
+        </div>
+        <Footer/>
     </>
   );
 }

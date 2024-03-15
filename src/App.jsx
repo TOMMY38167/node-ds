@@ -28,8 +28,9 @@ function App() {
     <div className="main">
       <Nav setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
       <Routes>
-        <Route path="/sobrenosotros" element={<SobreNosotros />} />
         <Route path="/" />
+        <Route path="/sobrenosotros" element={<SobreNosotros />} />
+        <Route path="/nav" element={<Nav/>}/>
       </Routes>
       {!isMenuOpen && (
         <>
