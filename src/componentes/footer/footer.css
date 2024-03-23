@@ -7,15 +7,21 @@
   align-items: center;
   color: #ffffff;
   margin-top: 10em;
+}
+.footer-negro {
 
+  color:black !important;
 
-
+}
+.footer-negro a{
+  color: black !important;
+  
 }
 .volver {
-    width: 9em;
+  width: 9em;
 }
 .volver p {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .laR {
   width: 16em;
@@ -40,23 +46,19 @@
 .redes {
   height: 2em;
   width: 10em;
- 
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-  .footer a {
+.footer a {
   color: #ffffff;
-  
-  
-    
 }
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 @font-face {
-    font-family: "Encode Sans Condensed";
-    src: url(https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap);
-  }
-  
+  font-family: "Encode Sans Condensed";
+  src: url(https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap);
+}

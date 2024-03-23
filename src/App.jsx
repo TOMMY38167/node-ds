@@ -4,6 +4,8 @@ import { Nav } from "./componentes/navbar/nav";
 import { Footer } from "../src/componentes/footer/footer";
 import Carrusel from "../src/componentes/carrusel/carrusel";
 import SobreNosotros from "./pages/sobrenosotros/sobrenosotros";
+import Planes from "./pages/planes/planes";
+import Servicios from "./pages/servicios/servicios";
 import Fondo from "./svg/indexLogo.svg";
 import Gmail from "./svg/gmail.svg";
 import Direccion from "./svg/ubicacion.svg";
@@ -14,7 +16,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hoveredLetters, setHoveredLetters] = useState([]);
-
+ 
   const handleMouseEnter = (index) => {
     setHoveredLetters([...hoveredLetters, index]);
   };
@@ -29,8 +31,9 @@ function App() {
       <Nav setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
       <Routes>
         <Route path="/" />
+        <Route path="/planes" element={<Planes />}/>
         <Route path="/sobrenosotros" element={<SobreNosotros />} />
-        <Route path="/nav" element={<Nav/>}/>
+        <Route path="/servicios" element={<Servicios />}/>
       </Routes>
       {!isMenuOpen && (
         <>

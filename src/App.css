@@ -6,6 +6,9 @@ body {
   animation: fadeIn 1s ease-out forwards;
 }
 
+.backgroundBlanco {
+  background-color: white !important;
+}
 .fondo {
   width: 100%;
   height: auto;

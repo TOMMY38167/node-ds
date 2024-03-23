@@ -1,0 +1,190 @@
+.contenedor-planes {
+  height: 36em;
+  width: 50em;
+  margin: 0%;
+  padding-left: 4em;
+}
+.contenedor-planes h1 {
+  font-family: "TuskerGrotesk";
+  font-weight: 100;
+  font-size: 11rem;
+  padding: 0%;
+  color: white;
+}
+.contenedor-planes p {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+  height: max-content;
+  margin: 0%;
+  padding: 0;
+  color: white;
+}
+.contenedor-tarjeta {
+  width: 100%;
+  height: max-content;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem 0;
+  align-items: center;
+}
+.contenedor-tarjeta-img {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+.contenedor-tarjeta-img img {
+  width: 98vw;
+  height: 27rem;
+  transition: all 0.5s ease-out;
+  margin: 0%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: center;
+}
+.tarjeta1 {
+  opacity: 0;
+}
+.tarjeta1:hover {
+  opacity: 1;
+}
+
+.contenedor-tarjeta-img:hover .tarjeta1 {
+  opacity: 1;
+}
+.contenedor-tarjeta-img:hover .hover-text {
+  color: white;
+}
+.contenedor-tarjeta-img:hover .hover-text li {
+  color: white;
+}
+.contenedor-tarjeta-img:hover .p-a-contenedor p {
+  color: white;
+}
+.contenedor-tarjeta-text {
+  border: 2px solid rgb(255, 255, 255);
+  width: 95vw;
+  height: 25rem;
+
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.contenedor-tarjeta-text h1 {
+  font-family: "TuskerGrotesk";
+  font-weight: 100;
+  font-size: 8rem;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+
+  padding: 0%;
+
+  transition: all 0.5s linear;
+  color: rgb(78, 78, 78);
+  height: min-content;
+}
+.contenedor-tarjeta-text p {
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: rgb(78, 78, 78);
+  transition: all 0.5s linear;
+}
+.h1-p-contenedor {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem 0;
+  margin-left: 1rem;
+}
+.ul-contenedor {
+  display: flex;
+  align-items: center;
+  list-style-position: inside;
+}
+.contenedor-tarjeta-text li {
+  font-family: "Encode Sans Condensed", sans-serif;
+  color: rgb(78, 78, 78);
+  font-size: 0.9rem;
+  transition: all 0.5s linear;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.1rem;
+}
+.p-a-contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem 0;
+}
+.planes--button {
+  padding-left: 5em;
+}
+.planes--button a {
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: background-color 0.3s, color 0.3s;
+}
+.planes--button a:hover {
+  background-color: white;
+  color: black;
+}
+.contenedor-tarjeta-img .arriba-izquierda {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.contenedor-tarjeta-img .arriba-derecha {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 7px;
+  right: .4375rem;
+  transform: rotate(180deg);
+}
+
+.contenedor-tarjeta-img .abajo-izquierda {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  bottom: 7px;
+  left: 7px;
+}
+
+.contenedor-tarjeta-img .abajo-derecha {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  transform: rotate(180deg);
+}
+.contenedor-tarjeta-final p {
+  font-family: "OpenSans-CondLight" Op;
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: rgb(78, 78, 78);
+  transition: all 0.5s linear;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+@font-face {
+  font-family: "TuskerGrotesk";
+  src: url(../../fonts/TuskerGrotesk-2500Medium.ttf);
+}
+
+@font-face {
+  font-family: "OpenSans-CondLight";
+  src: url(../../fonts/OpenSans-CondLight-webfont.woff);
+}

@@ -32,13 +32,13 @@ export const Nav = ({ setIsMenuOpen, isMenuOpen }) => {
                 <li className="text-bottom">SOBRE NOSOTROS</li>
               </div>
             </a>
-            <a href="">
+            <a href="/servicios">
               <div className="nuestro">
                 <li className="text-top">SERVICIOS</li>
                 <li className="text-bottom">SERVICIOS</li>
               </div>
             </a>
-            <a href="">
+            <a href="/planes">
               <div className="nuestro">
                 <li className="text-top">PLANES</li>
                 <li className="text-bottom">PLANES</li>

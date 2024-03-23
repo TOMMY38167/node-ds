@@ -1,30 +1,39 @@
 import React from "react";
 import "./footer.css";
-import R from "../../../src/svg/R.svg";
-import Arriba from "../../svg/up.svg";
-import Seguinos from "../../../src/svg/seguinos.svg";
+import { AiOutlineTrademark } from "react-icons/ai";
+import { BsShareFill } from "react-icons/bs";
+
+import { IoIosArrowUp } from "react-icons/io";
+
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import Nav from "../navbar/nav"
 
+import classNames from "classnames";
+import { useLocation } from "react-router-dom";
 export const Footer = () => {
+  const location = useLocation();
+  const paginasNegras = ["/sobrenosotros", "/servicios"];
+  const footerClassnames = classNames("footer", {
+    "footer-negro": paginasNegras.includes(location.pathname),
+  });
+ 
   return (
     <>
-      <div className="footer">
-        <a href="/">
+      <div className={footerClassnames}>
+        <a href="#">
           <p className="volver">
-            Volver al HOME     <img src={Arriba} alt="" />
+            Volver al HOME <IoIosArrowUp />
           </p>
         </a>
 
         <div className="laR">
           <p>2024 Node Digital Studio</p>
-          <img src={R} alt="" />
+          <AiOutlineTrademark />
         </div>
         <div className="caja-redes">
           <div className="segui">
-            <img src={Seguinos} alt="" />
+            <BsShareFill />
           </div>
           <div className="redes">
             <a href="">

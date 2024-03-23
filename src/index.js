@@ -5,6 +5,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SobreNosotros from "../src/pages/sobrenosotros/sobrenosotros";
+import Servicios from "./pages/servicios/servicios";
+import Planes from "./pages/planes/planes";
+
 
 const router = createBrowserRouter([
   {
@@ -16,9 +19,21 @@ const router = createBrowserRouter([
     path: '/sobrenosotros',
     element: <SobreNosotros/>
   }
+  ,
+  {
+    path: '/servicios',
+    element: <Servicios/>
+  }
+  ,
+  {
+    path: '/planes',
+    element: <Planes/>
+  }
 ]);
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     
