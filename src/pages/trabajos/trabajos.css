@@ -1,0 +1,79 @@
+.contenedor-fulltex-trabajos {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 36em;
+  display: flex;
+  justify-content: space-around;
+}
+.titulos-trabajo-contenedor {
+  width: max-content;
+  height: 20rem;
+  
+}
+.titulos-trabajo-contenedor h1 {
+  font-size: 9rem;
+  padding: 0%;
+  color: rgb(0, 0, 0);
+  margin: 0%;
+
+  padding: 0%;
+}
+.titulos-trabajo-contenedor img {
+  position: relative;
+  right: 0%;
+  width: 20rem;
+  height: auto;
+  padding-left: 16rem;
+}
+
+.trabajos-text-contenedor {
+ 
+  width: max-content;
+  height: max-content;
+  margin-top:5rem;
+}
+.trabajos-text-contenedor p {
+    font-family: nohemite;
+}
+.rayitas-contenedor {
+   
+    width: max-content;
+    height: max-content;
+    margin-top: 29rem;
+}
+.contenedor-contexto {
+  width: 100%;
+  height: 60rem;
+background-color: white;
+}
+.titulos-contexto-contenedor {
+  width: 100%;
+  height: 20rem;
+padding-left: 3rem;
+  padding-top: 10rem;
+  
+}
+.titulos-contexto-contenedor h1 {
+    font-size: 8rem;
+    padding: 0%;
+    color: rgb(0, 0, 0);
+    margin: 0%;
+}
+.titulos-contexto-contenedor img {
+    position: relative;
+  right: 0%;
+  width: 20rem;
+  height: auto;
+  padding-left: 21.4rem;
+}
+.contenedor-balde{
+   
+    display: flex;
+}
+.contenedor-baldehyde img {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(255, 230, 0);
+    font-size: 3rem;
+
+}

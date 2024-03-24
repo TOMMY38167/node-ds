@@ -8,6 +8,7 @@ import Servicios from "./pages/servicios/servicios";
 import Home from "./pages/home/home";
 import { Routes, Route } from "react-router-dom";
 import cx from "classnames";
+import Trabajos from "./pages/trabajos/trabajos";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,6 +32,7 @@ function App() {
           <Route path="/planes" element={<Planes />} />
           <Route path="/sobrenosotros" element={<SobreNosotros />} />
           <Route path="/servicios" element={<Servicios />} />
+          <Route path="/trabajos"  element={<Trabajos />} />
         </Routes>
       )}
       {!isMenuOpen && <Footer />}

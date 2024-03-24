@@ -50,7 +50,7 @@ export const Nav = ({ setIsMenuOpen, isMenuOpen }) => {
                 <li className="text-bottom">CONTACTOS</li>
               </div>
             </a>
-            <a href="">
+            <a href="/trabajos">
               <div className="nuestro">
                 <li className="text-top">TRABAJOS</li>
                 <li className="text-bottom">TRABAJOS</li>
