@@ -120,7 +120,6 @@ export function SobreNosotros() {
         <div className="contacto-final">
           <h1>CONTACTANOS</h1>
         </div>
-        <Footer/>
     </>
   );
 }

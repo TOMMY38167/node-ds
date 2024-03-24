@@ -236,7 +236,6 @@ export default function Planes() {
           </p>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

@@ -28,7 +28,7 @@ export default function Home({ isLightMode, setIsLightMode }) {
   });
 
   const homeContainerClassName = cx("homeContainer", {
-    backgroundBlanco: isLightMode,
+    containerLightMode: isLightMode,
   });
   const lightSwitchContainerClassName = cx("lightSwitchContainer", {
     borderLightMode: isLightMode,

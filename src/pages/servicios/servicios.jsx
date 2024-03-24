@@ -143,7 +143,6 @@ export default function Servicios() {
             </p>
           </div>
         </div>
-        <Footer/>
       </div>
     </>
   );

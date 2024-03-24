@@ -39,8 +39,9 @@
   opacity: 0 !important;
 }
 
-.backgroundBlanco {
+.containerLightMode {
   background-color: white !important;
+  color: black !important;
 }
 .homeContainer {
   background-color: #242424;
