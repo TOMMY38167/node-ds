@@ -1,19 +1,20 @@
-import React, { useRef,useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
 import "./roles.css";
 
 export const Roles = ({ textoIzquierda, textoCentro, textoDerecha, foto }) => {
-  const cursorRef1=useRef();
- 
+  const cursorRef1 = useRef();
+
   const followMouse = (ref, e) => {
-    ref.current.style.top = `${e.pageY}px`;
-    ref.current.style.left = `${e.pageX}px`;
+    if (ref.current !== null) {
+      ref.current.style.top = `${e.pageY}px`;
+      ref.current.style.left = `${e.pageX}px`;
+    }
   };
 
   useEffect(() => {
     document.addEventListener("mousemove", (e) => {
       followMouse(cursorRef1, e);
-   
     });
   });
 
@@ -27,7 +28,7 @@ export const Roles = ({ textoIzquierda, textoCentro, textoDerecha, foto }) => {
         <p className="texto-derecha blanco-negro">{textoDerecha}</p>
       </div>
       <div className="follow" ref={cursorRef1}>
-<img src={foto} alt="" />
+        <img src={foto} alt="" />
       </div>
     </div>
   );
