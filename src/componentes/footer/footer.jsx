@@ -33,7 +33,8 @@ export const Footer = () => {
         </div>
         <div className="caja-redes">
           <div className="segui">
-            <BsShareFill />
+            <p>seguinos</p>
+            <div className="sharef"><BsShareFill /></div>
           </div>
           <div className="redes">
             <a href="">

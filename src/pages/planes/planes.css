@@ -188,3 +188,17 @@
   font-family: "OpenSans-CondLight";
   src: url(../../fonts/OpenSans-CondLight-webfont.woff);
 }
+@media screen and (max-width: 768px) {
+  .contenedor-planes {
+    width: auto; /* Cambiado a auto para ajustarse al ancho del contenido en pantallas más pequeñas */
+    padding-left: 2em; /* Reducido el padding para evitar desbordamientos */
+  }
+
+  .contenedor-planes h1 {
+    font-size: 7rem; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
+  }
+
+  .contenedor-planes p {
+    font-size: 1rem; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
+  }
+}

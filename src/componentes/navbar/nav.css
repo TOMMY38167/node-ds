@@ -61,8 +61,8 @@
 .nuestro {
   position: relative;
   overflow: hidden;
-  width: max-content; /* Ancho de tu contenedor */
-  height: 7em; /* Alto de tu contenedor */
+  width: max-content; 
+  height: 7em; 
 
   text-align: center;
   display: flex;
@@ -76,7 +76,7 @@
   height: 100%;
   text-align: center;
 
-  transition: transform 0.2s ease, opacity 0.5s ease; /* Transición suave */
+  transition: transform 0.2s ease, opacity 0.5s ease; 
 }
 
 .text-top {
@@ -90,12 +90,14 @@
   position: relative;
   top: 100%;
   opacity: 0;
-  transition: transform 0.3s ease, opacity 0.2s ease;
+  transition: transform 0.3s ease, opacity 0.0s ease;
 
 }
+
 .nuestro:hover .text-bottom {
   transform: translateY(-84%);
   opacity: 1;
+  color:  rgba(235, 85, 0, 1);
 }
 
 .nuestro li {
@@ -104,12 +106,12 @@
   justify-content: center;
   align-items: center;
   font-size: 6rem;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   font-family: "TuskerGrotesk";
-  opacity: 0.10;
+ 
 }
 li a {
-  color: antiquewhite;
+  color: white;
 }
 @keyframes fadeIn {
   0% {

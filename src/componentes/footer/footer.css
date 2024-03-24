@@ -9,13 +9,10 @@
   margin-top: 10em;
 }
 .footer-negro {
-
-  color:black !important;
-
-}
-.footer-negro a{
   color: black !important;
-  
+}
+.footer-negro a {
+  color: black !important;
 }
 .volver {
   width: 9em;
@@ -35,13 +32,44 @@
   width: 1rem;
 }
 .segui {
-  height: 2em;
+  height: 1em;
   width: 10em;
+  position: relative;
+pointer-events: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-  display: flex;
   align-items: center;
+ 
+}
+.segui p {
+  margin: 0;
+pointer-events: none;
+  transition: all 0.3s ease;
+  opacity: 1;
+  width: fit-content;
 
-  text-align: center;
+}
+.segui svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: right 0.3s ease;
+}
+.segui .sharef {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  height: 100%;
+  pointer-events: auto;
+}
+
+.segui .sharef:hover svg {
+  right: 100px;
+}
+.segui:hover  p {
+  opacity: 0 !important;
 }
 .redes {
   height: 2em;
