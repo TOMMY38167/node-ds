@@ -14,7 +14,6 @@ import Flechaizquierda from "../../svg/flecha Tarjeta 2.svg";
 export default function Planes() {
   return (
     <>
-      <Nav />
       <div className="contenedor-planes">
         <h1>PLANES</h1>
         <p>

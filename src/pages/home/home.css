@@ -1,0 +1,267 @@
+.homeContainer .fondo .centeredContainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.homeContainer .fondo .centeredContainer .focoContainer {
+  width: 30rem;
+  height: 30rem;
+  position: relative;
+}
+.homeContainer .fondo .centeredContainer .focoContainer .focoLight {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center 70%;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+}
+.homeContainer .fondo .centeredContainer .focoContainer .focoDark {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center 70%;
+  transition: opacity 0.3s linear;
+  opacity: 1;
+}
+
+.homeContainer .fondo .centeredContainer .switch .focoLight {
+  opacity: 1 !important;
+}
+.homeContainer .fondo .centeredContainer .switch .focoDark {
+  opacity: 0 !important;
+}
+
+.backgroundBlanco {
+  background-color: white !important;
+}
+.homeContainer {
+  background-color: #242424;
+  transition: all 0.5s linear;
+}
+
+.borderLightMode{
+  border: 1px solid black !important;
+}
+
+.homeContainer .fondo .centeredContainer .lightSwitchContainer {
+  width: 4.125rem;
+  height: 7.5rem;
+  border: 1px solid white;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.homeContainer .fondo .centeredContainer .lightSwitchContainer img {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.2rem;
+}
+.homeContainer .fondo .centeredContainer .lightSwitchContainer .lightSwitchON {
+  width: 4.125rem;
+  height: 5.5rem;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.homeContainer .fondo .centeredContainer .lightSwitchContainer .lightSwitchOFF {
+  width: 4.125rem;
+  height: 5.5rem;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  transition: all 0.5s linear;
+}
+.homeContainer
+  .fondo
+  .centeredContainer
+  .lightSwitchContainer
+  .lightSwitchONActive {
+  opacity: 1;
+  transform: translateY(-2rem);
+}
+.homeContainer
+  .fondo
+  .centeredContainer
+  .lightSwitchContainer
+  .lightSwitchOFFInactive {
+  opacity: 0;
+  transform: translateY(-2rem);
+}
+.fondo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4% 0;
+}
+
+.fondo img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-top: 2%;
+}
+
+.fondo p {
+  font-size: 1rem;
+  width: 80%;
+  height: auto;
+  color: rgb(146, 146, 146);
+  font-family: "Encode Sans Condensed", sans-serif;
+  text-align: center;
+}
+
+.text-button {
+  text-align: center;
+  width: 100%;
+}
+
+.text-button p {
+  padding-bottom: 2vh;
+  color: rgb(146, 146, 146);
+  font-family: "Open Sans", sans-serif;
+}
+
+.proyectos--button a {
+  color: rgb(146, 146, 146);
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: background-color 0.3s, color 0.3s;
+}
+.proyectos--button a:hover {
+  background-color: white;
+  color: black;
+}
+.text-button h1 {
+  font-size: 12rem;
+  color: #ffffff;
+  font-family: "TuskerGrotesk";
+  font-weight: 100;
+
+  line-height: 1.1;
+  margin: 0;
+}
+.space--button {
+  height: 10em;
+}
+.servicios h1 {
+  font-size: 11rem;
+  color: #ffffff;
+  opacity: 0.1;
+  transition: opacity 0.5s ease;
+}
+h1:hover {
+  opacity: 1;
+}
+.conoce {
+  height: 15em;
+}
+.conoce p {
+  margin-bottom: -2rem;
+}
+
+.presupuestos {
+  height: 15em;
+}
+.presupuestos p {
+  margin-bottom: -2rem;
+}
+.presupuestos h1 {
+  font-size: 12rem;
+}
+.pie-de-pagina {
+  height: 2.5em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  margin-bottom: 4em;
+
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.pie-de-pagina p {
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contactos {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.contactos a {
+  color: rgb(255, 255, 255);
+  line-height: 0.0625rem;
+  height: 6rem;
+}
+.contactos img {
+  width: 2rem;
+  height: 3rem;
+}
+.trabajemos h1 {
+  font-size: 12rem;
+  font-family: "TuskerGrotesk";
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.title-contenedor {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+span {
+  width: max-content;
+  margin: 0.1rem;
+  padding: 0;
+}
+.title {
+  font-size: 11rem;
+  font-family: "TuskerGrotesk";
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.letter {
+  transition: transform 0.4s ease;
+  display: inline-block;
+}
+
+.letter:hover {
+  transform: scale(1.25) translateY(0.8rem);
+}

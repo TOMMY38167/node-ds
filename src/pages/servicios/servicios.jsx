@@ -8,8 +8,6 @@ export default function Servicios() {
   return (
     <>
       <div className="main-servicios">
-        <Nav />
-
         <div className="servicios-contenedor">
           <div className="servicios-contenedor-text">
             <h1>SERVICIOS</h1>

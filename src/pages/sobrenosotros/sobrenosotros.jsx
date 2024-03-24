@@ -15,7 +15,6 @@ export function SobreNosotros() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <Nav setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
       <div className="sobre-nosotros">
         <div className="nosotros-text">
           <h1>SOBRE NOSOTROS</h1>
