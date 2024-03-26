@@ -8,14 +8,13 @@
 .titulos-trabajo-contenedor {
   width: max-content;
   height: 20rem;
-  
 }
 .titulos-trabajo-contenedor h1 {
   font-size: 9rem;
   padding: 0%;
   color: rgb(0, 0, 0);
   margin: 0%;
-
+  z-index: 10;
   padding: 0%;
 }
 .titulos-trabajo-contenedor img {
@@ -24,56 +23,125 @@
   width: 20rem;
   height: auto;
   padding-left: 16rem;
+  z-index: 10;
 }
 
 .trabajos-text-contenedor {
- 
   width: max-content;
   height: max-content;
-  margin-top:5rem;
+  margin-top: 5rem;
+  z-index: 10;
 }
 .trabajos-text-contenedor p {
-    font-family: nohemite;
+  font-family: nohemite;
 }
 .rayitas-contenedor {
-   
-    width: max-content;
-    height: max-content;
-    margin-top: 29rem;
+  width: max-content;
+  height: max-content;
+  margin-top: 29rem;
+  z-index: 10;
 }
 .contenedor-contexto {
   width: 100%;
-  height: 60rem;
-background-color: white;
+  height: 200rem;
+  background-color: white;
 }
+/*.contenedor-contexto::before {
+  background-image: url("../../img/FondoTextura.png");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200rem;
+
+ 
+}*/
 .titulos-contexto-contenedor {
   width: 100%;
   height: 20rem;
-padding-left: 3rem;
+  padding-left: 3rem;
   padding-top: 10rem;
-  
+
+  z-index: 10;
 }
 .titulos-contexto-contenedor h1 {
-    font-size: 8rem;
-    padding: 0%;
-    color: rgb(0, 0, 0);
-    margin: 0%;
+  font-size: 8rem;
+  padding: 0%;
+  color: rgb(0, 0, 0);
+
+  margin: 0%;
 }
 .titulos-contexto-contenedor img {
-    position: relative;
+  position: relative;
   right: 0%;
   width: 20rem;
   height: auto;
   padding-left: 21.4rem;
 }
-.contenedor-balde{
-   
-    display: flex;
+.contenedor-balde {
+  display: flex;
+  align-items: center;
+  height: 40rem;
+  justify-content: space-around;
+  z-index: 10;
 }
-.contenedor-baldehyde img {
-    width: 3rem;
-    height: 3rem;
-    background-color: rgb(255, 230, 0);
-    font-size: 3rem;
+.contenedor-balde img {
+  width: 38.6875rem;
+  height: 30.8125rem;
+}
+.contenedor-balde p {
+  font-size: 1rem;
+}
+.rayitas-naranjas {
+  width: max-content;
+  height: max-content;
+  position: relative;
+  bottom: 0;
+}
+.rayitas-naranjas img {
+  width: 6rem;
+  height: 7rem;
+  padding-top: 30rem;
+}
+.fulltex-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-left: 3rem;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
 
+.desafio-text {
+background-color: rgba(0, 0, 255, 0.329);
+}
+.desafio-text h1 {
+  font-size: 8rem;
+  padding: 0%;
+  color: rgb(0, 0, 0);
+
+  margin: 0%;
+}
+.desafio-text img {
+  position: relative;
+  right: 0%;
+  width: 20rem;
+  height: auto;
+  padding-left: 12.5rem;
+}
+.contenedor-balde-textos {
+  display: flex;
+}
+.contenedor-text-p {
+  padding-left: 3rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+.contenedor-balde-membrana {
 }

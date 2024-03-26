@@ -3,8 +3,11 @@ import "./trabajos.css";
 import Simbolos from "../../../src/svg/simbolos-fulltex.svg";
 import Rayitas from "../../../src/svg/rayitas-chotas.svg";
 import { FaAngleDown } from "react-icons/fa6";
-import Balde from "../../../src/svg/BaldeNuevo 1.svg";
-
+import Balde from "../../img/BaldeNuevo 1.png";
+import Membrana from "../../img/baldemembrana 1.png";
+import RayitasNaranja from "../../../src/svg/rayitas-chotas-naranjas.svg";
+import Fulltex from "../../../src/svg/fulltex-logo-completo.svg";
+import Simbolostex from "../../../src/svg/simbolos-fulltex-completo.svg";
 export default function Trabajos() {
   return (
     <>
@@ -58,14 +61,73 @@ export default function Trabajos() {
           <img src={Simbolos} alt="" />
         </div>
         <div className="contenedor-balde">
-         <img src={Balde} alt="" />
+          <img src={Balde} alt="" />
           <p>
-            En el mercado de revestimientos plásticos, la diferenciación es
-            crucial para el éxito. FullTex se enfrentaba al desafío de
-            establecer una identidad visual que no solo reflejara la calidad de
-            sus productos, sino que también transmitiera su enfoque innovador y
-            moderno.
+            <strong>
+              En el mercado de revestimientos plásticos, la <br />{" "}
+              diferenciación es crucial para el éxito. FullTex
+              <br /> se enfrentaba al desafío de establecer una
+              <br /> identidad visual que no solo reflejara la
+              <br /> calidad de sus productos, sino que también
+              <br /> transmitiera su enfoque innovador y moderno.
+            </strong>
           </p>
+          <div className="rayitas-naranjas">
+            <img src={RayitasNaranja} alt="" />
+          </div>
+        </div>
+        <div className="fulltex-contenedor">
+          <div className="fulltex-logo">
+            <img src={Fulltex} alt="" />
+          </div>
+          <div className="fulltex-simbolos-completos">
+            <img src={Simbolostex} alt="" />
+          </div>
+        </div>
+        <div className="desafio-contenedor">
+          <div className="desafio-text">
+            <h1>DESAFÍO</h1>
+            <img src={Simbolos} alt="" />
+          </div>
+          <div className="contenedor-balde-textos">
+            <div className="contenedor-text-p">
+              <p>
+                Crear una identidad visual distintiva que se destacara en un
+                mercado saturado. Comunicar la calidad y la innovación de los
+                productos de FullTex de manera efectiva. Reflejar el enfoque
+                moderno y vanguardista de la empresa en su identidad visual.
+                Soluciones:
+              </p>
+              <p>
+              <h2>Inspiración en la Escuela Bauhaus:</h2>
+                FullTex adoptó principios de diseño de la Escuela Bauhaus,
+                enfocándose en líneas limpias, formas geométricas y colores
+                audaces. Diseño de Identidad Visual: Se desarrolló un nuevo
+                logotipo que incorporaba tipografía moderna y formas geométricas
+                simplificadas.
+              </p>
+              <img src={Simbolostex} alt="" />
+              <p>
+              <h2>implementacion coherente:</h2>
+                La nueva identidad visual se aplicó en todos los materiales de
+                marketing, desde folletos hasta el sitio web, creando una
+                experiencia de marca consistente. Resultados:
+              </p>
+              <p>
+              <h2>Respuesta Positiva:</h2>
+                La nueva identidad visual recibió elogios tanto de clientes
+                existentes como de nuevos clientes potenciales.
+              </p>
+              <p>
+              <h2>Diferenciación en el Mercado:</h2>
+                FullTex se destacó en un mercado saturado gracias a su enfoque
+                único en el diseño.
+              </p>
+            </div>
+            <div className="contenedor-balde-membrana">
+              <img src={Membrana} alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </>
