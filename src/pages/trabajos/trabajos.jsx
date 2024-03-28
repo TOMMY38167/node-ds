@@ -5,6 +5,10 @@ import Rayitas from "../../../src/svg/rayitas-chotas.svg";
 import { FaAngleDown } from "react-icons/fa6";
 import Balde from "../../img/BaldeNuevo 1.png";
 import Membrana from "../../img/baldemembrana 1.png";
+import Fullscreen from "../../img/fulltex-screen.png";
+import Colores from "../../img/colores-img.png";
+import Latexscreen from "../../img/screen-latex.png"
+import Revestscreen from "../../img/revestimiento-screen.png";
 import RayitasNaranja from "../../../src/svg/rayitas-chotas-naranjas.svg";
 import Fulltex from "../../../src/svg/fulltex-logo-completo.svg";
 import Simbolostex from "../../../src/svg/simbolos-fulltex-completo.svg";
@@ -99,7 +103,7 @@ export default function Trabajos() {
                 Soluciones:
               </p>
               <p>
-              <h2>Inspiración en la Escuela Bauhaus:</h2>
+                <h2>Inspiración en la Escuela Bauhaus:</h2>
                 FullTex adoptó principios de diseño de la Escuela Bauhaus,
                 enfocándose en líneas limpias, formas geométricas y colores
                 audaces. Diseño de Identidad Visual: Se desarrolló un nuevo
@@ -108,18 +112,18 @@ export default function Trabajos() {
               </p>
               <img src={Simbolostex} alt="" />
               <p>
-              <h2>implementacion coherente:</h2>
+                <h2>implementacion coherente:</h2>
                 La nueva identidad visual se aplicó en todos los materiales de
                 marketing, desde folletos hasta el sitio web, creando una
                 experiencia de marca consistente. Resultados:
               </p>
               <p>
-              <h2>Respuesta Positiva:</h2>
+                <h2>Respuesta Positiva:</h2>
                 La nueva identidad visual recibió elogios tanto de clientes
                 existentes como de nuevos clientes potenciales.
               </p>
               <p>
-              <h2>Diferenciación en el Mercado:</h2>
+                <h2>Diferenciación en el Mercado:</h2>
                 FullTex se destacó en un mercado saturado gracias a su enfoque
                 único en el diseño.
               </p>
@@ -129,6 +133,41 @@ export default function Trabajos() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="conclusion-contenedor">
+        <div className="conclusion-h1-img">
+          <h1>CONCLUSION</h1>
+          <img src={Simbolos} alt="" />
+        </div>
+      </div>
+      <div className="conclusion-p">
+        <p>
+          El caso de FullTex demuestra el poder de una identidad visual
+          <br /> sólida y coherente en la construcción de una marca exitosa. Al
+          <br /> adoptar una estrategia inspirada en la Escuela Bauhaus, la
+          <br /> empresa logró diferenciarse en un mercado competitivo y<br />{" "}
+          comunicar su compromiso con la calidad y la innovación. Este
+          <br /> estudio destaca la importancia de la creatividad y el diseño en
+          la
+          <br /> creación de una marca memorable y exitosa.
+        </p>
+      </div>
+      <div className="conclusion-contenedor-imagenes">
+        <div className="imagenes-izquierda">
+          <img src={Fullscreen} alt="" />
+          <img src={Colores} alt="" />
+        </div>
+        <div className="imagenes-derecha">
+          <img src={Revestscreen} alt="" />
+        </div>
+      </div>
+      <div className="latex-img-final">
+        <img src={Latexscreen} alt="" />
+      </div>
+      <div className="fulltex-link">
+        <a href="https://www.fulltex.com.ar/" target="_blank">
+          <h1>WWW.FULLTEX.COM.AR</h1>
+        </a>
       </div>
     </>
   );

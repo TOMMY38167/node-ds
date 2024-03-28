@@ -2,14 +2,24 @@ import React, { useState } from "react";
 import "./nav.css";
 import Logo from "../../svg/logoNav.svg";
 import { Cross as Hamburger } from "hamburger-react";
+import classNames from "classnames";
+import { useLocation } from "react-router-dom";
 
 export const Nav = ({ setIsMenuOpen, isMenuOpen }) => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    
   };
+  const location = useLocation();
+const paginasNegras = ["/servicios", "/trabajos"];
+const navClassnames = classNames("nav", {
+  "nav-negro": paginasNegras.includes(location.pathname),
+});
+
+  
   return (
     <>
-      <div className="navBar">
+      <div id="navBar" className={navClassnames}>
         <a href="/"><img className="logo" src={Logo} alt="" /></a>
         <div className="menu-hambur">
           <p>Menu</p>{" "}
@@ -18,7 +28,7 @@ export const Nav = ({ setIsMenuOpen, isMenuOpen }) => {
             <Hamburger
               size={20}
               className="hambur"
-              color="rgb(255, 255, 255)"
+              color={ paginasNegras.includes(location.pathname) ?  "rgb(0, 0, 0)":"rgb(255, 255, 255)" }
             />
           </a>
         </div>

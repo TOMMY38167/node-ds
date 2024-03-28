@@ -1,4 +1,4 @@
-.navBar {
+#navBar {
   width: 100%;
   background-color: rgba(15, 15, 15, 0.425);
   height: 4.2rem;
@@ -12,6 +12,16 @@
   position: sticky;
   top: 0;
   backdrop-filter: blur(0.2rem);
+}
+.nav-negro {
+  background-color:  rgb(235, 86, 0) !important;
+ 
+}
+.nav-negro p {
+  color: black !important;
+}
+.nav-negro .hambur {
+  color: black !important;
 }
 .menu-hambur {
   width: 7em;

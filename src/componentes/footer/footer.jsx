@@ -13,7 +13,7 @@ import classNames from "classnames";
 import { useLocation } from "react-router-dom";
 export const Footer = () => {
   const location = useLocation();
-  const paginasNegras = ["/sobrenosotros", "/servicios"];
+  const paginasNegras = ["/servicios", "/trabajos"] ;
   const footerClassnames = classNames("footer", {
     "footer-negro": paginasNegras.includes(location.pathname),
   });

@@ -6,9 +6,10 @@
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
-  margin-top: 10em;
+ 
 }
 .footer-negro {
+  background-color: white;
   color: black !important;
 }
 .footer-negro a {
